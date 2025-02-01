@@ -24,8 +24,15 @@
 
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
+section {
+  background-color: var(--light-color);
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+}
 h2 {
   color: var(--secondary-main-color);
   font-family: var(--main-primary-font);
@@ -171,13 +178,76 @@ nav ul.resmenu {
   grid-template-columns: 1fr 1fr;
   place-items: center;
   background: var(--bg-gradent-color);
+  position: relative;
 }
-.hero-text span {
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+.hero-text .auto-type {
   color: var(--light-color);
+}
+.hero-text h2 {
+  line-height: 50px;
+  margin-bottom: 20px;
 }
 .hero-img img {
   width: 650px;
   height: 650px;
+}
+span.out-text {
+  color: transparent;
+  font-family: var(--secondary-main-font);
+  -webkit-text-stroke: 1px var(--secondary-main-color);
+}
+.hero .btn {
+  width: 150px;
+  height: 40px;
+  padding: 5px 38px;
+  border-radius: 15px;
+  background: var(--light-color);
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  box-shadow: var(--shadow-color);
+  font-weight: 600;
+  font-family: var(--main-primary-font);
+  cursor: pointer;
+}
+.vector {
+  position: absolute;
+  left: 0;
+  bottom: -110px;
+  z-index: 1;
+}
+.vector img {
+  width: 100vw;
+}
+/*===================== section1======================= */
+.section1 {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: var(--light-color);
+  padding: 20px 0;
+}
+.slide-text {
+  display: inline-block;
+  font-size: 52px;
+  font-family: var(--main-primary-font);
+  color: var(--main-primary-color);
+  opacity: 0.3;
+  white-space: nowrap;
+  animation: slidetext 15s linear infinite;
+}
+@keyframes slidetext {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 /*===================== Extra Small Devices ======================= */
 @media screen and (max-width: 480px) {
