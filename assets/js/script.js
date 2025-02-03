@@ -1,3 +1,4 @@
+// text typing ainmation =====================================
 var typed = new Typed(".auto-type", {
   strings: [
     "Digital Marketing",
@@ -36,3 +37,97 @@ const showmenu = () => {
   menubar.classList.toggle("show-menu");
   menu.classList.toggle("resmenu");
 };
+
+// =================================== scroll number count============================
+
+const counters = document.querySelectorAll(".counter span");
+const container = document.querySelector(".counters");
+let active = false;
+
+window.addEventListener("scroll", () => {
+  if (
+    window.pageYOffset > container.offsetTop - container.offsetHeight - 500 &&
+    !active
+  ) {
+    counters.forEach((counter) => {
+      counter.innerHTML = 0;
+      let count = 0;
+
+      const updateCount = () => {
+        const target = parseInt(counter.dataset.count);
+        if (count < target) {
+          count++;
+          counter.innerHTML = count;
+          setTimeout(updateCount, 15);
+        } else {
+          counter.innerHTML = target;
+        }
+      };
+
+      updateCount();
+    });
+
+    active = true;
+  } else if (
+    window.pageYOffset < container.offsetTop - container.offsetHeight - 500 &&
+    active
+  ) {
+    counters.forEach((counter) => {
+      counter.innerHTML = 0;
+    });
+    active = false;
+  }
+});
+
+const arrow = document.getElementById("scrollArrow");
+const firstSection = document.querySelector(".hero");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > firstSection.offsetHeight) {
+    arrow.style.display = "block";
+  } else {
+    arrow.style.display = "none";
+  }
+});
+// ========================================slider card ==========================
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlides(n) {
+  if (n >= slides.length) slideIndex = 0;
+  if (n < 0) slideIndex = slides.length - 1;
+
+  document.querySelector(".slides").style.transform = `translateX(${
+    -slideIndex * 100
+  }%)`;
+
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[slideIndex].classList.add("active");
+}
+
+function moveSlide(n) {
+  slideIndex += n;
+  showSlides(slideIndex);
+  resetAutoSlide();
+}
+
+function currentSlide(n) {
+  slideIndex = n;
+  showSlides(slideIndex);
+  resetAutoSlide();
+}
+
+function autoSlide() {
+  slideIndex++;
+  showSlides(slideIndex);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  autoSlideInterval = setInterval(autoSlide, 8000);
+}
+
+showSlides(slideIndex);
+
+let autoSlideInterval = setInterval(autoSlide, 8000);
