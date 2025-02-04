@@ -131,3 +131,15 @@ function resetAutoSlide() {
 showSlides(slideIndex);
 
 let autoSlideInterval = setInterval(autoSlide, 8000);
+// slide 2
+let slideIndex2 = 0;
+const slideContainer2 = document.querySelector("#slider2");
+const slides2 = document.querySelectorAll("#slider2 .multi-slide");
+
+function autoSlide2() {
+  slideIndex2++;
+  if (slideIndex2 > slides2.length - 3) slideIndex2 = 0;
+  slideContainer2.style.transform = `translateX(${-slideIndex2 * 33.33}%)`;
+}
+
+let autoSlideInterval2 = setInterval(autoSlide2, 3000);

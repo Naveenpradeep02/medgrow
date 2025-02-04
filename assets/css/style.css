@@ -605,7 +605,48 @@ span.out-text {
 .active {
   background-color: var(--main-primary-color);
 }
-
+/*======================= slide card2========================= */
+.slide2-section {
+  padding: 20px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container2 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  background: var(--light-color);
+  padding: 10px;
+}
+.slides2 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.multi-slide {
+  display: flex;
+  gap: 20px;
+  min-width: 30%;
+  justify-content: center;
+}
+.slide2-card {
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.slide2-card img {
+  width: 200px;
+}
+footer {
+  background: var(--main-primary-color);
+  width: 100%;
+  height: 400px;
+}
 /*===================== Extra Small Devices ======================= */
 @media screen and (max-width: 480px) {
   header {
