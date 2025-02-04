@@ -143,3 +143,16 @@ function autoSlide2() {
 }
 
 let autoSlideInterval2 = setInterval(autoSlide2, 3000);
+
+document.querySelectorAll(".faq-question").forEach((question) => {
+  question.addEventListener("click", () => {
+    document.querySelectorAll(".faq-answer").forEach((answer) => {
+      if (answer !== question.nextElementSibling) {
+        answer.style.display = "none";
+      }
+    });
+
+    let answer = question.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
