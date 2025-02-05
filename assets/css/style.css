@@ -961,6 +961,19 @@ footer {
   .section7 {
     padding: 20px;
   }
+  .faq-question h4 {
+    align-items: start;
+  }
+  .qustion-icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5px;
+  }
+  .qustion-icon i {
+    font-size: 14px;
+  }
 }
 
 /* ============================Small Devices =============================== */
