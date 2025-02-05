@@ -284,6 +284,7 @@ span.out-text {
   padding: 20px 0;
 }
 .slide-text {
+  /* width: 350px; */
   display: inline-block;
   font-size: 42px;
   font-family: var(--main-primary-font);
@@ -291,14 +292,15 @@ span.out-text {
   opacity: 0.3;
   white-space: nowrap;
   animation: slidetext 30s linear infinite;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 @keyframes slidetext {
   0% {
-    transform: translateX(200%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 .slide-text2 {
@@ -306,10 +308,10 @@ span.out-text {
 }
 @keyframes slidetext2 {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(200%);
+    transform: translateX(0%);
   }
 }
 /* card */
@@ -830,7 +832,7 @@ footer {
   }
   nav ul.resmenu {
     display: flex;
-    top: -20%;
+    top: -15%;
     transition: top 0.5s ease-in-out;
   }
   .resmenu .services {
@@ -884,13 +886,17 @@ footer {
   .section-cards {
     grid-template-areas: "c1" "c2" "c3";
   }
+  section {
+    overflow: hidden;
+  }
   .slide-text,
   .slide-text2 {
-    font-size: 28px;
+    font-size: 18px;
   }
+
   @keyframes slidetext {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
     100% {
       transform: translateX(-100%);
@@ -904,7 +910,7 @@ footer {
       transform: translateX(-100%);
     }
     100% {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
   }
   .section2-content {
@@ -1051,7 +1057,7 @@ footer {
   }
   nav ul.resmenu {
     display: flex;
-    top: -20%;
+    top: -15%;
     transition: top 0.5s ease-in-out;
   }
   .resmenu .services {
