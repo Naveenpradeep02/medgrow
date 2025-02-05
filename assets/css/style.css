@@ -794,7 +794,7 @@ footer {
 }
 
 /*===================== Extra Small Devices ======================= */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   header {
     padding: 10px 0px;
     position: relative;
@@ -977,7 +977,7 @@ footer {
 }
 
 /* ============================Small Devices =============================== */
-@media screen and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   header {
     padding: 10px 0px;
     position: relative;
@@ -1032,10 +1032,134 @@ footer {
     padding: 10px;
     transition: top 0.3s ease-in-out;
   }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    background: linear-gradient(-180deg, #51b867 19.28%, #fcfcfc 95.44%);
+  }
+  .hero-img img {
+    width: 500px;
+    height: 450px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .hero-text {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .hero-text h2 {
+    line-height: 35px;
+  }
+  .counter h1,
+  .counter h1 span {
+    font-size: 18px;
+  }
+  .counter h3 {
+    font-size: 12px;
+  }
+  .section-content {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    place-items: center;
+  }
+
+  section {
+    overflow: hidden;
+  }
+  .slide-text {
+    font-size: 8vw;
+    animation: slidetext 15s linear infinite;
+  }
+  @keyframes slidetext {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .slide-text2 {
+    animation: slidetext2 30s linear infinite;
+  }
+  @keyframes slidetext2 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .section2-content {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .slide2-section {
+    padding: 20px;
+  }
+  .slide2-card {
+    padding: 15px;
+  }
+  .slide2-card img {
+    width: 80px;
+  }
+  .section3 {
+    padding: 20px;
+  }
+  .bar-line {
+    padding: 20px;
+  }
+  .footer-container {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .section4 {
+    padding: 20px;
+  }
+  .cta {
+    flex-direction: column;
+  }
+  .section5-content {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .section6-title {
+    padding: 20px;
+  }
+  .prev {
+    left: 40%;
+  }
+  .next {
+    right: 40%;
+  }
+  .prev,
+  .next {
+    top: 90%;
+  }
+  .section7 {
+    padding: 20px;
+  }
+  .faq-question h4 {
+    align-items: start;
+  }
+  .qustion-icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5px;
+  }
+  .qustion-icon i {
+    font-size: 14px;
+  }
 }
 
 /*========================================Medium Devices====================================== */
-@media screen and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
   header {
     padding: 20px 20px;
   }
@@ -1086,12 +1210,217 @@ footer {
     padding: 10px;
     transition: top 0.3s ease-in-out;
   }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    background: linear-gradient(-180deg, #51b867 19.28%, #fcfcfc 95.44%);
+  }
+  .hero-img img {
+    width: 500px;
+    height: 450px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .hero-text {
+    margin-top: 200px;
+    text-align: center;
+  }
+  .hero-text h2 {
+    line-height: 35px;
+  }
+  .counter h1,
+  .counter h1 span {
+    font-size: 18px;
+  }
+  .counter h3 {
+    font-size: 12px;
+  }
+  .section-content {
+    padding: 20px;
+    place-items: center;
+  }
+
+  section {
+    overflow: hidden;
+  }
+  .slide-text {
+    font-size: 8vw;
+    animation: slidetext 15s linear infinite;
+  }
+  @keyframes slidetext {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .slide-text2 {
+    animation: slidetext2 30s linear infinite;
+  }
+  @keyframes slidetext2 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .section2-content {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .slide2-section {
+    padding: 20px;
+  }
+  .slide2-card {
+    padding: 15px;
+  }
+
+  .section3 {
+    padding: 20px;
+  }
+  .bar-line {
+    padding: 20px;
+  }
+  .footer-container {
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section4 {
+    padding: 20px;
+  }
+  .cta {
+    flex-direction: column;
+  }
+  .section5-content {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .section6-title {
+    padding: 20px;
+  }
+  .prev {
+    left: 40%;
+  }
+  .next {
+    right: 40%;
+  }
+  .prev,
+  .next {
+    top: 90%;
+  }
+  .section7 {
+    padding: 20px;
+  }
+  .faq-question h4 {
+    align-items: start;
+  }
+  .qustion-icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5px;
+  }
+  .qustion-icon i {
+    font-size: 14px;
+  }
 }
 
 /* ===================================Large Devices=============================== */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+@media (min-width: 992px) and (max-width: 1199px) {
   header {
     padding: 20px 60px;
+  }
+  .hero {
+    margin-top: 100px;
+
+    padding: 20px 0px 0px 100px;
+    background: linear-gradient(-180deg, #51b867 19.28%, #fcfcfc 95.44%);
+    gap: 20px;
+  }
+  .hero-img img {
+    width: 500px;
+    height: 450px;
+  }
+
+  .hero-text h2 {
+    line-height: 35px;
+  }
+  .counter h1,
+  .counter h1 span {
+    font-size: 18px;
+  }
+  .counter h3 {
+    font-size: 12px;
+  }
+  .section-content {
+    padding: 20px 50px;
+    place-items: center;
+    gap: 20px;
+  }
+
+  section {
+    overflow: hidden;
+  }
+  .section2-content {
+    padding: 20px 50px;
+    place-items: center;
+  }
+  .slide2-section {
+    padding: 20px 50px;
+  }
+
+  .bar-line {
+    padding: 20px 50px;
+  }
+  .footer-container {
+    padding: 20px 50px;
+  }
+  .section4 {
+    padding: 20px;
+  }
+  .cta {
+    flex-direction: column;
+  }
+  .section5-content {
+    padding: 20px 50px;
+  }
+  .section6-title {
+    padding: 20px;
+  }
+  .prev {
+    left: 40%;
+  }
+  .next {
+    right: 40%;
+  }
+  .prev,
+  .next {
+    top: 90%;
+  }
+  .section7 {
+    padding: 20px;
+  }
+  .faq-question h4 {
+    align-items: start;
+  }
+  .qustion-icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5px;
+  }
+  .qustion-icon i {
+    font-size: 14px;
   }
 }
 
