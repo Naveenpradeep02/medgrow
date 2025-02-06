@@ -27,6 +27,9 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.active-bar {
+  color: var(--secondary-main-color);
+}
 section {
   background-color: var(--light-color);
   position: relative;
@@ -296,10 +299,10 @@ span.out-text {
 
 @keyframes slidetext {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 .slide-text2 {
@@ -307,10 +310,10 @@ span.out-text {
 }
 @keyframes slidetext2 {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
 }
 /* card */
