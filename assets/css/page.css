@@ -302,3 +302,29 @@ h4 {
 .client-box .imgs img {
   width: 150px;
 }
+.fect-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.fet-box {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: 2px solid var(--main-primary-color);
+  align-items: center;
+  border-radius: 16px;
+  justify-content: center;
+  padding: 24px;
+}
+.fet-box .img i {
+  font-size: 62px;
+  color: var(--main-primary-color);
+}
+.fet-text {
+  padding: 0px 20px;
+  text-align: center;
+}
+.seo-form {
+  background-color: var(--light-color);
+}
