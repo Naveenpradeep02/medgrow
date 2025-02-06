@@ -5,7 +5,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar {
+  background: var(--light-color);
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--light-color);
+  border-radius: 50px;
+}
 :root {
   /* =================fonts ================*/
   --logo-font-primary: "KoHo", serif;
