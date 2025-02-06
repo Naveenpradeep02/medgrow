@@ -148,3 +148,44 @@
   height: 250px;
   background-color: var(--light-green-color);
 }
+.contact-section {
+  padding: 20px 150px;
+}
+
+.contact-box {
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.c-box {
+  padding: 26px;
+  border-radius: 16px;
+  border: 2px solid var(--main-primary-color);
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.c-box:hover {
+  box-shadow: 0px 0px 10px var(--main-primary-color);
+}
+.c-box .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-box .img i {
+  color: var(--main-primary-color);
+  font-size: 56px;
+}
+.c-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
