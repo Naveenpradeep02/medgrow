@@ -37,6 +37,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column;
 }
 .section-heading h2 {
   position: relative;
@@ -327,4 +328,115 @@ h4 {
 }
 .seo-form {
   background-color: var(--light-color);
+}
+.work-sample {
+  padding: 0px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.design {
+  background-color: var(--light-green-color);
+  padding: 24px;
+  border-radius: 16px;
+  width: 300px;
+  margin: 0px auto;
+}
+.design .img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.text-img {
+  padding: 24px;
+}
+
+.smm-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.proccess-bar {
+  padding: 0px 150px;
+  margin-bottom: 150px;
+}
+.proccess-bar ul {
+  display: grid;
+  gap: 100px;
+}
+.proccess-bar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.proccess-bar ul li span {
+  font-family: var(--main-primary-font);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--main-primary-color);
+  font-weight: 600;
+}
+.proccess-bar ul li p {
+  width: 550px;
+  position: absolute;
+  top: 30%;
+
+  left: 55%;
+  background-color: var(--light-green-color);
+  padding: 24px;
+  border-radius: 0px 16px 16px 16px;
+}
+.proccess-bar ul li:nth-child(odd) p::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -12px;
+  background: linear-gradient(
+    -135deg,
+    var(--light-green-color) 0%,
+    var(--light-green-color) 50%,
+    transparent 50%,
+    transparent
+  );
+}
+.proccess-bar ul li:nth-child(2n) p {
+  left: 0%;
+  border-radius: 16px 0px 16px 16px;
+}
+.proccess-bar ul li:nth-child(2n) p::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: -12px;
+  background: linear-gradient(
+    135deg,
+    var(--light-green-color) 0%,
+    var(--light-green-color) 50%,
+    transparent 50%,
+    transparent
+  );
+}
+.proccess-bar ul li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  top: 30px;
+  width: 2px;
+  height: 150px;
+  background-color: var(--main-primary-color);
+  z-index: -1;
 }

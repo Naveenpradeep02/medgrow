@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Box</title>
+    <style>
+      /* Chat box with a tail at the top-left */
+      .chat-box-top-left {
+        width: 300px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        position: relative;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .chat-box-top-left::before {
+        content: "";
+        position: absolute;
+        top: -20px; /* Move tail to the top */
+        left: -20px; /* Position tail to the left */
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 20px solid #f1f1f1; /* Tail points upwards */
+      }
+
+      /* Polygon shape with tail at the top-left */
+      .chat-box-polygon-top-left {
+        width: 300px;
+        height: 150px;
+        background-color: #f1f1f1;
+        clip-path: polygon(
+          0% 0%,
+          100% 0%,
+          100% 100%,
+          15% 100%,
+          15% 80%,
+          0% 80%
+        );
+
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        padding: 15px;
+        position: relative;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .chat-box-polygon-top-left::before {
+        content: "";
+        position: absolute;
+        top: -20px; /* Move tail to the top */
+        left: -20px; /* Position tail to the left */
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 20px solid #f1f1f1; /* Tail points upwards */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Chat Box with Regular Rounded Corner and Tail at Top Left -->
+    <div class="chat-box-top-left">
+      This is a basic chat box with a tail at the top-left.
+    </div>
+
+    <br /><br />
+
+    <!-- Chat Box with Polygon Shape and Tail at Top Left -->
+    <div class="chat-box-polygon-top-left">
+      This is a chat box with a polygon shape and a tail at the top-left.
+    </div>
+  </body>
+</html>
