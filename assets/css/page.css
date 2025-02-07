@@ -389,7 +389,7 @@ h4 {
   width: 550px;
   position: absolute;
   top: 30%;
-
+  box-shadow: 5px 2px 10px rgb(115, 115, 115);
   left: 55%;
   background-color: var(--light-green-color);
   padding: 24px;
@@ -413,6 +413,7 @@ h4 {
 .proccess-bar ul li:nth-child(2n) p {
   left: 0%;
   border-radius: 16px 0px 16px 16px;
+  box-shadow: 2px 5px 10px rgb(148, 148, 148);
 }
 .proccess-bar ul li:nth-child(2n) p::before {
   content: "";
@@ -439,4 +440,29 @@ h4 {
   height: 150px;
   background-color: var(--main-primary-color);
   z-index: -1;
+}
+p i {
+  color: var(--main-primary-color);
+  margin-right: 10px;
+}
+.images {
+  width: 500px;
+  overflow: hidden;
+  align-self: start;
+  background-color: var(--light-green-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 16px;
+}
+.images img {
+  width: 450px;
+  margin-bottom: 10px;
+}
+.web-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
